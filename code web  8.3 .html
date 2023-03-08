@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <h3 style="color: red; text-align: center;">❀CHÚC MỪNG NGÀY 8/3❀</h3>
+  <title>Women's Day 2023</title>
+  <style>
+    /* Image styles */
+    #image {
+      width: 200px;
+      height: 200px;
+      cursor: pointer;
+    }
+
+    /* Moving letter styles */
+    #letter {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 1;
+      text-align: center;
+      display: none;
+      animation-name: moveLetter;
+      animation-duration: 1s;
+      background-image: url(https://pixabay.com/static/uploads/photo/2015/02/21/09/57/heart-644091_960_720.png);
+      /* background-repeat: no-repeat; */
+    }
+
+    /* Keyframe animation for moving letter */
+    @keyframes moveLetter {
+      0% {
+        top: -100%;
+      }
+
+      100% {
+        top: 0;
+      }
+    }
+
+    /* Parent container styles */
+    #container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body background="ảnh .jpg">
+  <style type="text/css">
+    body {
+      overflow: hidden;
+    }
+  </style>
+  <div id="container">
+    <img src="bức thư.jpg" id="image">
+    <div id="letter">
+      <p style="color: green">
+        Chúc mừng ngày 8/3 đến với chị! Chúc cho chị mãi luôn xinh đẹp, thành công trong cuộc sống 
+        và sớm có chồng nha chị.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Get image and letter elements
+    const image = document.getElementById('image');
+    const letter = document.getElementById('letter');
+
+    // Add click event listener to image
+    image.addEventListener('click', function () {
+      letter.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
